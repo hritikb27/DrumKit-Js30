@@ -1,0 +1,48 @@
+body{
+    max-height: 100vh;
+    overflow: hidden;
+    margin: auto;
+}
+
+img{
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    height: 950px;
+    width: 2000px;
+}
+
+.main{
+    display: flex;
+    gap: 100px;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 450px;
+    left: 115px;
+}
+
+.main div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border: 2px solid white;
+    color: white;
+    font-weight: bolder;
+    background-color: rgba(0, 0, 0, 0.4);
+    min-width: 5vw;
+    min-height: 6vh;
+    transition:0.5ms;
+}
+
+.main div span{
+    color: yellow;
+}
+
+.main div:hover{
+    scale: 1.1;
+    background-color: rgba(0, 0, 0, 0.28);
+    box-shadow: 0 0 10px yellow;
+}
