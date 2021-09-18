@@ -1,25 +1,26 @@
+html{
+    height: 100%;
+    width: 100%;
+}
+
 body{
-    max-height: 100vh;
+    display: flex;
+    justify-content: center;
+    background: url('background.jpg');
+    box-sizing: border-box;
+    height: 100%;
+    width: 100%;
     overflow: hidden;
     margin: auto;
 }
 
-img{
-    background-size: cover;
-    background-repeat: no-repeat;
-    position: relative;
-    /* height: 950px;
-    width: 2000px; */
-}
-
 .main{
     display: flex;
-    gap: 100px;
+    flex-wrap: wrap;
+    gap: 10px;
     justify-content: center;
     align-items: center;
-    position: absolute;
-    bottom: 450px;
-    left: 115px;
+    
 }
 
 .main div{
