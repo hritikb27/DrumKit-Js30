@@ -12,10 +12,14 @@ Array.from(allKeys, (e)=>{
 window.addEventListener('keydown', (e)=>{
     const key = e.keyCode;
     const getInstr = document.querySelector(`audio[data-key="${key}"]`);
-
+    const keyClass = document.querySelector(`div[data-key="${key}"]`);
+    
+    keyClass.classList.add('keydown')
+    getInstr.classList.add('keydown');
     if(!getInstr){
         return;
     }
     getInstr.currentTime = 0;
     getInstr.play();
+    keyClass.classList.remove('keydown')
 })
